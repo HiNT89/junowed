@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CMS quản trị thiệp cưới" />
+  <title>Hỷ Sự — CMS quản trị</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#dashboard"><span class="brand-mark">H</span><span>Hỷ Sự<small>ADMIN CONSOLE</small></span></a>
+      <nav aria-label="Điều hướng quản trị">
+        <p class="nav-label">TỔNG QUAN</p>
+        <a class="nav-link active" href="#dashboard" data-page="Tổng quan" data-subtitle="Chào buổi sáng, Hiếu. Đây là tình hình hôm nay."><span>◈</span>Tổng quan</a>
+        <a class="nav-link" href="#weddings" data-page="Thiệp cưới" data-subtitle="Quản lý nội dung và trạng thái xuất bản."><span>♡</span>Thiệp cưới <b id="wedding-count">24</b></a>
+        <a class="nav-link" href="#templates" data-page="Mẫu thiệp" data-subtitle="Chọn thiết kế phù hợp cho từng cặp đôi."><span>▱</span>Mẫu thiệp</a>
+        <p class="nav-label">VẬN HÀNH</p>
+        <a class="nav-link" href="#orders" data-page="Đơn hàng" data-subtitle="Theo dõi thanh toán và các đơn cần xử lý."><span>◫</span>Đơn hàng <b class="warning">3</b></a>
+        <a class="nav-link" href="#domains" data-page="Tên miền" data-subtitle="Cấu hình địa chỉ truy cập cho thiệp cưới."><span>⌁</span>Tên miền</a>
+        <a class="nav-link" href="#guests" data-page="RSVP & Khách mời" data-subtitle="Nắm nhanh phản hồi và danh sách khách mời."><span>♧</span>RSVP & Khách mời</a>
+        <p class="nav-label">HỆ THỐNG</p>
+        <a class="nav-link" href="#activity" data-page="Nhật ký" data-subtitle="Lịch sử hoạt động của không gian quản trị."><span>◷</span>Nhật ký hoạt động</a>
+        <a class="nav-link" href="#settings" data-page="Cài đặt" data-subtitle="Tùy chỉnh tài khoản và thông báo."><span>⚙</span>Cài đặt</a>
+      </nav>
+      <div class="help-card"><span>✦</span><div><strong>Cần hỗ trợ?</strong><small>Đọc tài liệu vận hành</small></div></div>
+      <div class="profile"><div class="avatar">HN</div><div><strong>Hiếu Nguyễn</strong><small>Quản trị viên</small></div><button aria-label="Mở menu tài khoản">•••</button></div>
+    </aside>
+
+    <main>
+      <header class="topbar"><div class="crumb"><span id="page-title">Tổng quan</span><small id="page-subtitle">Chào buổi sáng, Hiếu. Đây là tình hình hôm nay.</small></div><div class="top-actions"><input id="global-search" type="search" placeholder="Tìm thiệp..." aria-label="Tìm kiếm"><button class="icon-btn mobile-only" id="mobile-menu" aria-label="Mở menu">☰</button><button class="icon-btn" id="search-button" aria-label="Tìm kiếm">⌕</button><button class="icon-btn has-dot" id="notification-button" aria-label="Thông báo">♢</button><button class="primary" id="new-wedding">+ Tạo thiệp cưới</button></div><div class="notifications" id="notifications"><strong>Thông báo mới</strong><p><b>3 đơn hàng</b> đang chờ thanh toán.</p><p>Thiệp Minh Anh có 4 RSVP mới.</p></div></header>
+      <section class="content page-view" id="page-dashboard">
+        <div class="hero"><div><p class="eyebrow">23 THÁNG 10, 2026</p><h1>Một ngày thật đẹp<br>để tạo thêm <em>niềm vui.</em></h1><button class="hero-button" id="hero-create">Tạo thiệp đầu tiên →</button></div><div class="hero-art" aria-hidden="true"><i></i><i></i><i></i><span>❋</span></div></div>
+        <section class="metrics" aria-label="Các số liệu chính">
+          <article><div class="metric-icon rose">♡</div><div><small>Tổng thiệp cưới</small><strong>24</strong><p class="up">↑ 12% <span>so với tháng trước</span></p></div></article>
+          <article><div class="metric-icon gold">◫</div><div><small>Doanh thu tháng này</small><strong>12.480.000₫</strong><p class="up">↑ 8.4% <span>so với tháng trước</span></p></div></article>
+          <article><div class="metric-icon violet">♧</div><div><small>Lượt RSVP mới</small><strong>186</strong><p class="up">↑ 24% <span>so với tháng trước</span></p></div></article>
+          <article><div class="metric-icon teal">◉</div><div><small>Tỷ lệ xuất bản</small><strong>91.7%</strong><p class="neutral">22 / 24 thiệp đang hoạt động</p></div></article>
+        </section>
+        <div class="grid-two">
+          <section class="panel activity"><div class="panel-head"><div><h2>Hoạt động gần đây</h2><p>Cập nhật mới nhất trên hệ thống</p></div><a href="#activity">Xem tất cả →</a></div>
+            <ol>
+              <li><div class="event-icon pink">♡</div><div><strong>Thiệp “Minh Anh & Tuấn Kiệt” đã được xuất bản</strong><p>hieu.nguyen · 12 phút trước</p></div><span class="badge live">Đang hoạt động</span></li>
+              <li><div class="event-icon green">₫</div><div><strong>Thanh toán mới đã được xác nhận</strong><p>Đơn #WD-2048 · 20 phút trước</p></div><span class="amount">890.000₫</span></li>
+              <li><div class="event-icon purple">✦</div><div><strong>Khách mời phản hồi RSVP</strong><p>Thiệp của Hoàng Nam & Bảo Trân · 38 phút trước</p></div><span class="badge yes">Tham dự</span></li>
+              <li><div class="event-icon gold">▱</div><div><strong>Mẫu “Mộc Lan” được cập nhật phiên bản</strong><p>v2.4.0 · 1 giờ trước</p></div><span class="badge draft">Đã xem</span></li>
+            </ol>
+          </section>
+          <section class="panel sales"><div class="panel-head"><div><h2>Doanh thu</h2><p>Tháng 10, 2026</p></div><button class="select">30 ngày ▾</button></div><div class="revenue"><strong>12.480.000₫</strong><span>↑ 8.4%</span></div><div class="chart" aria-label="Biểu đồ doanh thu 7 ngày"><div style="height:38%"></div><div style="height:58%"></div><div style="height:45%"></div><div style="height:76%"></div><div style="height:63%"></div><div style="height:88%"></div><div class="today" style="height:70%"></div></div><div class="chart-labels"><span>14 Th10</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>Hôm nay</span></div></section>
+        </div>
+        <section class="panel weddings" id="weddings"><div class="panel-head"><div><h2>Thiệp cưới mới cập nhật</h2><p>Quản lý nội dung, trạng thái và tên miền xuất bản</p></div><button class="ghost" id="view-weddings">Xem tất cả <span>→</span></button></div>
+          <div class="table-wrap"><table><thead><tr><th>Cặp đôi</th><th>Mẫu thiệp</th><th>Trạng thái</th><th>RSVP</th><th>Cập nhật</th><th></th></tr></thead><tbody class="wedding-rows">
+            <tr><td><div class="couple"><div class="couple-ava a1">MA</div><div><strong>Minh Anh & Tuấn Kiệt</strong><small>minhanh-tuankiet.hysu.vn</small></div></div></td><td>Mộc Lan <small>v2.4</small></td><td><span class="badge live">● Đã xuất bản</span></td><td><strong>48</strong> <small>/ 120</small></td><td>12 phút trước</td><td><button class="more">•••</button></td></tr>
+            <tr><td><div class="couple"><div class="couple-ava a2">HN</div><div><strong>Hoàng Nam & Bảo Trân</strong><small>hoangnam-baotran.hysu.vn</small></div></div></td><td>Giao Mùa <small>v1.8</small></td><td><span class="badge live">● Đã xuất bản</span></td><td><strong>31</strong> <small>/ 80</small></td><td>38 phút trước</td><td><button class="more">•••</button></td></tr>
+            <tr><td><div class="couple"><div class="couple-ava a3">TL</div><div><strong>Thảo Linh & Đức Minh</strong><small>Chưa có tên miền</small></div></div></td><td>Thanh Xuân <small>v3.1</small></td><td><span class="badge draft">● Bản nháp</span></td><td><strong>—</strong></td><td>2 giờ trước</td><td><button class="more">•••</button></td></tr>
+          </tbody></table></div>
+        </section>
+      </section>
+      <section class="content page-view" id="page-weddings" hidden><div class="page-heading"><div><p class="eyebrow">THIỆP CƯỚI</p><h1>Không gian của các <em>cặp đôi.</em></h1><p>Theo dõi, chỉnh sửa và xuất bản từng lời mời.</p></div><button class="primary" onclick="document.querySelector('#new-wedding').click()">+ Tạo thiệp cưới</button></div><section class="panel"><div class="panel-head"><div><h2>Toàn bộ thiệp cưới</h2><p>Nhấn ••• để chỉnh sửa hoặc thay đổi trạng thái.</p></div></div><div class="table-wrap"><table><thead><tr><th>Cặp đôi</th><th>Mẫu thiệp</th><th>Trạng thái</th><th>RSVP</th><th>Cập nhật</th><th></th></tr></thead><tbody class="wedding-rows"></tbody></table></div></section></section>
+      <section class="content page-view" id="page-templates" hidden><div class="page-heading"><div><p class="eyebrow">THƯ VIỆN THIẾT KẾ</p><h1>Mẫu thiệp mang <em>dấu ấn riêng.</em></h1><p>Chọn một mẫu để dùng làm nền tảng cho thiệp cưới mới.</p></div></div><div class="template-grid"><article class="template-card selected" data-template="Mộc Lan"><div class="template-art art-one">M<span>ỘC LAN</span></div><h3>Mộc Lan</h3><p>Thanh lịch · 4 bố cục</p><button class="ghost">Dùng mẫu này</button></article><article class="template-card" data-template="Giao Mùa"><div class="template-art art-two">G<span>IAO MÙA</span></div><h3>Giao Mùa</h3><p>Hiện đại · 5 bố cục</p><button class="ghost">Dùng mẫu này</button></article><article class="template-card" data-template="Thanh Xuân"><div class="template-art art-three">T<span>HANH XUÂN</span></div><h3>Thanh Xuân</h3><p>Tối giản · 3 bố cục</p><button class="ghost">Dùng mẫu này</button></article></div></section>
+      <section class="content page-view" id="page-orders" hidden><div class="page-heading"><div><p class="eyebrow">VẬN HÀNH</p><h1>Đơn hàng & <em>thanh toán.</em></h1><p>3 đơn hàng đang chờ bạn xác nhận.</p></div></div><section class="panel"><div class="table-wrap"><table><thead><tr><th>Mã đơn</th><th>Cặp đôi</th><th>Gói dịch vụ</th><th>Thành tiền</th><th>Trạng thái</th></tr></thead><tbody><tr><td><strong>#WD-2052</strong></td><td>Ngọc Hân & Quang Duy</td><td>Premium</td><td><strong>1.290.000₫</strong></td><td><span class="badge draft">● Chờ thanh toán</span></td></tr><tr><td><strong>#WD-2051</strong></td><td>Khánh Vy & Gia Bảo</td><td>Standard</td><td><strong>890.000₫</strong></td><td><span class="badge live">● Đã thanh toán</span></td></tr></tbody></table></div></section></section>
+      <section class="content page-view" id="page-domains" hidden><div class="empty-state"><div>⌁</div><h2>Tên miền sẵn sàng kết nối</h2><p>Liên kết tên miền riêng để thiệp cưới của mỗi cặp đôi thật đáng nhớ.</p><button class="primary">+ Thêm tên miền</button></div></section><section class="content page-view" id="page-guests" hidden><div class="empty-state"><div>♧</div><h2>186 phản hồi RSVP mới</h2><p>Danh sách khách mời và phản hồi được đồng bộ tại đây.</p><button class="primary">Xuất danh sách khách</button></div></section><section class="content page-view" id="page-activity" hidden><div class="empty-state"><div>◷</div><h2>Nhật ký hệ thống</h2><p>Mọi thay đổi nội dung, thanh toán và xuất bản đều được lưu lại an toàn.</p></div></section><section class="content page-view" id="page-settings" hidden><div class="empty-state"><div>⚙</div><h2>Cài đặt không gian làm việc</h2><p>Cập nhật hồ sơ, quyền truy cập và tuỳ chọn nhận thông báo.</p><button class="primary">Mở cài đặt</button></div></section>
+    </main>
+  </div>
+  <div class="modal-backdrop" id="wedding-modal"><div class="modal" role="dialog" aria-modal="true"><button class="close-modal" aria-label="Đóng">×</button><p class="eyebrow">THIỆP CƯỚI</p><h2 id="modal-title">Tạo thiệp cưới mới</h2><form id="wedding-form"><label>Tên cô dâu & chú rể<input id="couple-name" required placeholder="Ví dụ: Lan Anh & Minh Quân"></label><label>Mẫu thiệp<select id="template-name"><option>Mộc Lan</option><option>Giao Mùa</option><option>Thanh Xuân</option></select></label><label>Đường dẫn thiệp <span>.hysu.vn</span><input id="domain-name" placeholder="lananh-minhquan"></label><label>Trạng thái<select id="publish-status"><option>Đã xuất bản</option><option>Bản nháp</option></select></label><div class="form-actions"><button type="button" class="danger" id="delete-wedding" hidden>Xoá thiệp</button><button type="submit" class="primary">Lưu thiệp cưới</button></div></form></div></div><div class="toast" id="toast" role="status"></div>
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Thiệp cưới Hái Đăng & Yến Vy">
+    <title>Wedding Day - Hái Đăng & Yến Vy</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Cinzel:wght@400;500;600&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="page2.css">
+    <link rel="stylesheet" href="color-theme.css">
+</head>
+
+<body>
+    <!-- Audio Players (Manual play only) -->
+    <audio id="music1" loop>
+        <source src="musics/wedding.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="music2" loop>
+        <source src="musics/Em Đồng Ý (I Do).mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Music Control Buttons -->
+    <div class="music-controls-container">
+        <button class="music-btn music-btn-left music-btn-gold" id="musicBtn1" data-audio="music1">
+            <svg class="music-icon music-note-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" />
+            </svg>
+            <span class="music-title">Wedding Music</span>
+        </button>
+        <button class="music-btn music-btn-right music-btn-rose" id="musicBtn2" data-audio="music2">
+            <svg class="music-icon music-note-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M21 3v12.5c0 1.38-1.12 2.5-2.5 2.5S16 16.88 16 15.5s1.12-2.5 2.5-2.5c.57 0 1.08.19 1.5.51V5h-8v10.5c0 1.38-1.12 2.5-2.5 2.5S7 16.88 7 15.5 8.12 13 9.5 13c.57 0 1.08.19 1.5.51V3h10z" />
+            </svg>
+            <span class="music-title">Ngày Chung Đôi</span>
+        </button>
+    </div>
+
+
+    <!-- Section 1: Hero with Wedding Day Text -->
+    <section class="hero-section">
+        <div class="hero-image-container">
+            <img src="imageReals/1.jpg" alt="Wedding Photo" class="hero-image">
+            <div class="hero-overlay"></div>
+            <div class="hero-text">
+                <h1 class="wedding-day-text">Wedding day</h1>
+                <div class="couple-names">
+                    <p class="groom-name">Hải Đăng</p>
+                    <p class="bride-name">Yến Vy</p>
+                    <p class="wedding-date">20.02.2026</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Save the Date -->
+    <section class="save-date-section">
+        <div class="save-date-content">
+            <h2 class="save-date-heading">SAVE <span class="script-the">the</span> DATE</h2>
+            <p class="wedding-date-text">20.02.2026</p>
+            <div class="couple-photo-container">
+                <img src="imageReals/2.jpg" alt="Couple Photo" class="couple-main-photo">
+            </div>
+            <div class="couple-names-info">
+                <p class="couple-full-names">HẢI ĐĂNG & YẾN VY</p>
+                <div class="wedding-date-grid">
+                    <div class="date-column left-column">
+                        <p class="date-day">Thứ Sáu</p>
+                        <p class="date-time">09:30</p>
+                    </div>
+                    <div class="date-column center-column">
+                        <p class="date-number">20</p>
+                    </div>
+                    <div class="date-column right-column">
+                        <p class="date-month">Tháng 02</p>
+                        <p class="date-year">2026</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Invitation -->
+    <section class="invitation-section">
+        <div class="invitation-content">
+            <div class="couple-photo-header">
+                <img src="imageReals/3.jpg" alt="Happy Couple" class="couple-photo">
+                <div class="floral-top-decoration"></div>
+            </div>
+            <p class="love-quote">Thế giới có thể thay đổi, nhưng tình yêu của chúng ta sau một thập kỷ vẫn vẹn nguyên
+                như ngày đầu. 10 năm - một hành trình, một tình yêu duy nhất.</p>
+        </div>
+    </section>
+
+    <!-- Section 4: Wedding Details with Map -->
+    <section class="wedding-details-section">
+        <div class="details-content">
+            <div class="parents-info-repeat">
+                <div class="bride-parents">
+                    <h4 class="family-label-top">NHÀ GÁI</h4>
+                    <p class="father-info">Ông. HỒ PHÁT ĐẠT</p>
+                    <p>Bà. NGUYỄN THỊ ĐÀI TRÂM</p>
+                    <p>AN GIANG</p>
+                </div>
+                <div class="divider-line"></div>
+                <div class="groom-parents">
+                    <h4 class="family-label-top">NHÀ TRAI</h4>
+                    <p class="father-info">Ông. PHẠM VĂN PHI <br><span class="small-text">(Cố Phụ)</span></p>
+                    <p>Bà. NGUYỄN HỒNG PHƯỢNG</p>
+                    <p>AN GIANG</p>
+                </div>
+            </div>
+            <p class="invitation-message-repeat">Thân mời bạn đến tham dự đám cưới<br>cùng gia đình chúng tôi!</p>
+
+            <div class="couple-names-display">
+                <h2 class="groom-display">HẢI ĐĂNG</h2>
+                <img src="images/templates/and.png" alt="and" class="and-symbol-img">
+                <h2 class="bride-display">YẾN VY</h2>
+            </div>
+
+            <div class="ceremony-details">
+                <p class="ceremony-time">HÔN LỄ ĐƯỢC CỬ HÀNH TẠI <br>TƯ GIA</p>
+                <p class="ceremony-time">VÀO LÚC 9 GIỜ 30 PHÚT, THỨ SÁU</p>
+
+                <div class="date-display-full">
+                    <div class="date-parts">
+                        <div class="date-group-left">
+                            <span class="date-label">THÁNG</span>
+                            <span class="date-number-medium">02</span>
+                        </div>
+                        <span class="date-number-huge">20</span>
+                        <div class="date-group-right">
+                            <span class="date-label">NĂM</span>
+                            <span class="date-number-medium">2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="lunar-date">(Nhằm mồng 4 Tết tháng Giêng năm Bính Ngọ)</p>
+
+                <p class="venue-full-address">Địa chỉ: 312 TỔ 5 ẤP MỸ HOÁ 3, XÃ PHÚ TÂN, TỈNH AN GIANG</p>
+            </div>
+
+            <button class="directions-btn" id="directionsBtn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                        fill="currentColor" />
+                </svg>
+                CHỈ ĐƯỜNG
+            </button>
+        </div>
+    </section>
+
+    <!-- Section 5: Couple Information -->
+    <section class="couple-info-section">
+        <div class="couple-info-container">
+
+            <div class="bride-info">
+                <div class="couple-header">
+                    <span class="script-text">Cô dâu</span>
+                </div>
+                <h3 class="couple-info-name">YẾN VY</h3>
+                <div class="polaroid">
+                    <img src="imageReals/4.jpg" alt="Bride" class="couple-photo-card">
+                    <div class="polaroid-decoration"></div>
+                </div>
+            </div>
+
+            <div class="divider-heart">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="#8B1A1A">
+                    <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+            </div>
+
+
+            <div class="groom-info">
+                <div class="polaroid">
+                    <img src="imageReals/5.jpg" alt="Groom" class="couple-photo-card">
+                    <div class="polaroid-decoration"></div>
+                </div>
+                <h3 class="couple-info-name">HẢI ĐĂNG</h3>
+                <div class="couple-header">
+                    <span class="script-text">Chú rể</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Single Romantic Photo with Quote -->
+    <section class="single-photo-section">
+        <div class="single-photo-wrapper">
+            <img src="imageReals/6.jpg" alt="Romantic Couple" class="single-romantic-photo">
+            <div class="photo-overlay-gradient"></div>
+            <div class="photo-quote-overlay">
+                <p class="photo-quote-text">Hành trình 10 năm</p>
+                <p class="photo-quote-subtext">Từ người thương thành người thân, từ nồng nhiệt thành tri kỷ.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Timeline, Dresscode & Calendar -->
+    <section class="timeline-dresscode-section">
+        <div class="timeline-dresscode-content">
+            <!-- Top area: Timeline left, Dresscode right -->
+            <div class="timeline-dresscode-row">
+                <!-- Timeline with zigzag layout -->
+                <div class="timeline-block">
+                    <h3 class="section-subtitle">Timeline</h3>
+                    <div class="timeline-zigzag">
+                        <!-- Row 1: Left -->
+                        <div class="timeline-zigzag-item left">
+                            <div class="timeline-time">08:30</div>
+                            <div class="timeline-label-small">Đón Khách</div>
+                        </div>
+                        <div class="timeline-dot-center"></div>
+                        <!-- Row 2: Right -->
+                        <div class="timeline-zigzag-item right">
+                            <div class="timeline-time">09:30</div>
+                            <div class="timeline-label-small">Làm Lễ</div>
+                        </div>
+                        <div class="timeline-dot-center"></div>
+                        <!-- Row 3: Left -->
+                        <div class="timeline-zigzag-item left">
+                            <div class="timeline-time">10:00</div>
+                            <div class="timeline-label-small">Khai Tiệc</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dresscode - positioned right with tilt -->
+                <div class="dresscode-block-tilted">
+                    <h3 class="section-subtitle-dresscode">Dresscode</h3>
+                    <div class="dresscode-colors-row">
+                        <div class="color-swatch-large" style="background-color: #8B1A1A;" title="Burgundy"></div>
+                        <div class="color-swatch-large" style="background-color: #D4C9B0;" title="Cream"></div>
+                        <div class="color-swatch-large" style="background-color: #1A1A1A;" title="Black"></div>
+                        <div class="color-swatch-large" style="background-color: #FFFFFF; border: 1px solid #ddd;"
+                            title="White"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Calendar Image -->
+            <div class="calendar-block">
+                <img src="images/templates/calendar.jpg" alt="Calendar" class="calendar-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 8: Album -->
+    <section class="album-section">
+        <div class="album-content">
+            <div class="album-header">
+                <h2 class="album-title">ALBUM <span class="script-of">of</span></h2>
+                <div class="album-love-text">LOVE</div>
+            </div>
+
+            <!-- Photo Carousel -->
+            <div class="album-carousel">
+                <div class="carousel-main-display">
+                    <button class="carousel-nav carousel-prev" id="prevBtn">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M15 18l-6-6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="carousel-image-container">
+                        <img src="imageReals/7.jpg" alt="Wedding Photo" class="carousel-main-image" id="mainImage">
+                    </div>
+                    <button class="carousel-nav carousel-next" id="nextBtn">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M9 18l6-6-6-6" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="carousel-thumbnails-wrapper">
+                    <div class="carousel-thumbnails" id="thumbnailsContainer">
+                        <img src="imageReals/7.jpg" alt="Photo 1" class="carousel-thumb active" data-index="0">
+                        <img src="imageReals/8.jpg" alt="Photo 2" class="carousel-thumb" data-index="1">
+                        <img src="imageReals/9.jpg" alt="Photo 3" class="carousel-thumb" data-index="2">
+                        <img src="imageReals/10.jpg" alt="Photo 4" class="carousel-thumb" data-index="3">
+                        <img src="imageReals/11.jpg" alt="Photo 5" class="carousel-thumb" data-index="4">
+                        <img src="imageReals/12.jpg" alt="Photo 6" class="carousel-thumb" data-index="5">
+                        <img src="imageReals/13.jpg" alt="Photo 7" class="carousel-thumb" data-index="6">
+                        <img src="imageReals/14.jpg" alt="Photo 8" class="carousel-thumb" data-index="7">
+                        <img src="imageReals/15.jpg" alt="Photo 9" class="carousel-thumb" data-index="8">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section 9: RSVP Form -->
+    <section class="rsvp-section">
+        <div class="rsvp-content">
+            <p class="rsvp-intro">
+                Hãy xác nhận sự có mặt của bạn trước để chúng mình chuẩn bị đón tiếp một cách chu đáo nhất.<br>
+                Trân trọng!
+            </p>
+
+            <form id="rsvpForm" class="rsvp-form">
+                <input type="text" id="guestName" name="guestName" placeholder="Họ và tên" required class="form-input">
+
+                <textarea id="guestMessage" name="guestMessage" placeholder="Lời nhắn" rows="4"
+                    class="form-textarea"></textarea>
+
+                <select id="attendance" name="attendance" required class="form-select">
+                    <option value="">Bạn sẽ đến chứ?</option>
+                    <option value="Mình chắc chắn sẽ đến">Mình chắc chắn sẽ đến</option>
+                    <option value="Xin lỗi mình bận rồi">Xin lỗi mình bận rồi</option>
+                </select>
+
+                <select id="guestCount" name="guestCount" required class="form-select">
+                    <option value="">Bạn tham dự cùng ai?</option>
+                    <option value="1 người">1 người</option>
+                    <option value="2 người">2 người</option>
+                    <option value="3 người">3 người</option>
+                    <option value="4 người">4 người</option>
+                </select>
+
+                <button type="submit" class="form-submit-btn">GỬI LỜI NHẮN & <br>XÁC NHẬN</button>
+            </form>
+
+            <div id="formMessage" class="form-message"></div>
+        </div>
+    </section>
+
+    <!-- Section 10: Closing Message -->
+    <section class="message-section">
+        <div class="message-content">
+            <div class="message-image-wrapper">
+                <img src="imageReals/16.jpg" alt="Couple Message" class="message-image">
+                <div class="message-overlay"></div>
+                <div class="message-text-overlay">
+                    <p class="message-paragraph-overlay">
+                        Tình yêu của anh và em là một hành trình kỳ diệu, vượt qua bao thử thách để được dạo bước đến
+                        ngày
+                        trọng đại - đám cưới của chúng ta. Đó không chỉ là khoảnh khắc long trọng, mà còn là minh chứng
+                        cho
+                        tình cảm bền chặt và sự lựa chọn của hai người dành cho nhau.
+                    </p>
+                    <p class="message-paragraph-overlay">
+                        Đám cưới này là lời cam kết chân thành, là sự bắt đầu của một chương mới - nơi chúng ta cùng vun
+                        đắp
+                        tổ ấm, cùng sẻ chia mỗi bước và cùng đếm từng phút để cuối con đường mang tên hạnh phúc.
+                    </p>
+                    <p class="message-signature-overlay">
+                        <span class="script-signature">The Love Story</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 11: Countdown Timer -->
+    <section class="countdown-timer-section">
+        <div class="countdown-timer-content">
+            <div class="countdown-decoration-flower">
+                <svg width="60" height="60" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="15" fill="#f0e6d2" opacity="0.6" />
+                    <circle cx="35" cy="40" r="10" fill="#e8dcc8" opacity="0.5" />
+                    <circle cx="65" cy="40" r="10" fill="#e8dcc8" opacity="0.5" />
+                    <circle cx="50" cy="60" r="12" fill="#d4c5a0" opacity="0.6" />
+                </svg>
+            </div>
+            <h2 class="countdown-main-heading">Countdown</h2>
+            <div class="countdown-timer-display">
+                <div class="countdown-number-item">
+                    <div class="countdown-number" id="days">00</div>
+                </div>
+                <div class="countdown-colon">:</div>
+                <div class="countdown-number-item">
+                    <div class="countdown-number" id="hours">00</div>
+                </div>
+                <div class="countdown-colon">:</div>
+                <div class="countdown-number-item">
+                    <div class="countdown-number" id="minutes">00</div>
+                </div>
+                <div class="countdown-colon">:</div>
+                <div class="countdown-number-item">
+                    <div class="countdown-number" id="seconds">00</div>
+                </div>
+            </div>
+            <img src="images/templates/countdown.png" alt="Countdown Decoration" class="countdown-decoration-image">
+        </div>
+    </section>
+
+    <!-- Section 12: Thank You with Background Image -->
+    <section class="thankyou-section">
+        <div class="thankyou-background-wrapper">
+            <img src="imageReals/17.jpg" alt="Thank You" class="thankyou-bg-image">
+            <div class="thankyou-overlay"></div>
+        </div>
+        <div class="thankyou-content">
+            <h2 class="thankyou-title">Thank you</h2>
+            <p class="thankyou-message">
+                Cảm ơn bạn đã dành tình cảm cho chúng mình! <br>
+                Sự hiện diện của bạn chính là món quà ý nghĩa nhất,
+                và chúng mình rất mong được cùng chia sẻ
+                niềm hạnh phúc trong ngày trọng đại này.
+            </p>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightboxModal" class="lightbox-modal">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightboxImage">
+    </div>
+
+    <script src="page2.js"></script>
+</body>
+
+</html>

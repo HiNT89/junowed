@@ -1,0 +1,25 @@
+2:"$Sreact.fragment"
+3:"/templates/template-2/_next/static/chunks/1rma_1e5gs265.js"
+4:I[74904,["$3"],"ClientPageRoot"]
+5:"/templates/template-2/_next/static/chunks/0vtt8mji_w975.js"
+6:"/templates/template-2/_next/static/chunks/1lltzwphe6kl_.js"
+7:I[52683,["$3","$5","$6"],"default"]
+a:I[10113,["$3"],"OutletBoundary"]
+b:"$Sreact.suspense"
+f:"ViewportBoundary"
+10:I[10113,["$3"],"$f"]
+11:"MetadataBoundary"
+12:I[10113,["$3"],"$11"]
+:HL["/templates/template-2/_next/static/chunks/2rruwi4lyh3bg.css","style"]
+e:X
+1:[["children",{"s":"__PAGE__","h":128,"d":{"r":["$","$2","c",{"children":[["$","$L4",null,{"Component":"$7","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@8","$@9"]}}],[["$","link","0",{"rel":"stylesheet","href":"/templates/template-2/_next/static/chunks/2rruwi4lyh3bg.css","precedence":"next"}],["$","script","script-0",{"src":"/templates/template-2/_next/static/chunks/0vtt8mji_w975.js","async":true}],["$","script","script-1",{"src":"/templates/template-2/_next/static/chunks/1lltzwphe6kl_.js","async":true}]],["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]]}],"p":"$@d","v":null,"s":"$e"}}]]
+0:{"t":{"t":{"s":"","h":16,"c":"$Q1"},"h":{"r":["$","$2","h",{"children":[null,["$","$L10",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L12",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$b",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Tên chú rể & Tên cô dâu"}],["$","meta","1",{"name":"description","content":"Tên chú rể & Tên cô dâu - Website Helen Studio. Trải qua bao nhiêu chuyện thì chúng tôi đã tìm thấy nhau 1 mảnh ghép tình yêu."}],["$","meta","2",{"name":"author","content":"dewanakl"}],["$","meta","3",{"name":"keywords","content":"Tên chú rể,Tên cô dâu,Helen Studio,wedding invitation"}],["$","meta","4",{"name":"mobile-web-app-capable","content":"yes"}],["$","meta","5",{"name":"apple-mobile-web-app-title","content":"Tên chú rể & Tên cô dâu - Website Helen Studio"}],["$","meta","6",{"name":"apple-mobile-web-app-status-bar-style","content":"black-translucent"}],["$","meta","7",{"property":"og:title","content":"Tên chú rể & Tên cô dâu - Website Helen Studio"}],["$","meta","8",{"property":"og:description","content":"Tên chú rể & Tên cô dâu - Website Helen Studio. Trải qua bao nhiêu chuyện thì chúng tôi đã tìm thấy nhau 1 mảnh ghép tình yêu."}],["$","meta","9",{"property":"og:url","content":"https://wedding-2-wheat.vercel.app/"}],["$","meta","10",{"property":"og:site_name","content":"Tên chú rể & Tên cô dâu - Website Helen Studio"}],["$","meta","11",{"property":"og:locale","content":"id_ID"}],["$","meta","12",{"property":"og:image","content":"https://wedding-2-wheat.vercel.app/assets/images/1.jpg?v=3"}],["$","meta","13",{"property":"og:image:type","content":"image/jpeg"}],["$","meta","14",{"property":"og:image:width","content":"1200"}],["$","meta","15",{"property":"og:image:height","content":"630"}],["$","meta","16",{"property":"og:image:alt","content":"Tên chú rể & Tên cô dâu - Website Helen Studio"}],["$","meta","17",{"property":"og:type","content":"website"}],["$","meta","18",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","19",{"name":"twitter:title","content":"Tên chú rể & Tên cô dâu - Website Helen Studio"}],["$","meta","20",{"name":"twitter:description","content":"Tên chú rể & Tên cô dâu - Website Helen Studio. Trải qua bao nhiêu chuyện thì chúng tôi đã tìm thấy nhau 1 mảnh ghép tình yêu."}],["$","meta","21",{"name":"twitter:image","content":"https://wedding-2-wheat.vercel.app/assets/images/1.jpg?v=3"}],["$","meta","22",{"name":"twitter:image:alt","content":"Tên chú rể & Tên cô dâu - Website Helen Studio"}],["$","meta","23",{"name":"twitter:image:type","content":"image/jpeg"}],["$","meta","24",{"name":"twitter:image:width","content":"1200"}],["$","meta","25",{"name":"twitter:image:height","content":"630"}]]}]}],null]}],null]}],"p":"$@13","v":null,"s":"$e"}},"a":"$@14","u":"$@15","b":"3-vWJ2BkqZPgUAk-TNNMA"}
+8:{}
+9:"$1:0:1:d:r:props:children:0:props:serverProvidedParams:params"
+c:null
+15:true
+e:300
+e:C
+14:0
+13:"$undefined"
+d:"$undefined"

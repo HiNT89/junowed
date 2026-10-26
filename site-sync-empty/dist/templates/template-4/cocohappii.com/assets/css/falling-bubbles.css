@@ -1,0 +1,35 @@
+/* Falling bubbles effect for plain HTML pages */
+.falling-bubbles {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 10001;
+}
+.falling-bubbles .bubble {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(0.5px);
+  will-change: transform, opacity;
+  animation-name: fb-fall, fb-fade;
+  animation-timing-function: linear, ease-in-out;
+  /* run once and hold final frame until JS removes the element */
+  animation-iteration-count: 1, 1;
+  animation-fill-mode: forwards, forwards;
+  top: -12vh;
+}
+
+@keyframes fb-fall {
+  from { transform: translateY(-10vh) translateX(0); }
+  to   { transform: translateY(110vh) translateX(var(--dx)); }
+}
+
+@keyframes fb-fade {
+  0%   { opacity: 0; }
+  10%  { opacity: 0.5; }
+  90%  { opacity: 0.5; }
+  100% { opacity: 0; }
+}
+
+/* Optional helpers */
+.falling-bubbles .bubble.small { transform-origin: center; }

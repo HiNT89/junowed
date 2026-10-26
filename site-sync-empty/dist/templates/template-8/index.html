@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Thiệp cưới Save the Date - Đăng & Vy">
+    <title>Save The Date - Đăng & Vy</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="color-theme.css">
+</head>
+
+<body>
+    <div class="phone-container">
+        <!-- Main Card Image (Background.png as foreground) -->
+        <div class="card-wrapper">
+            <img src="images/templates/background.jpg" alt="Thiệp cưới" class="card-image">
+
+            <!-- Text Overlay -->
+            <div class="text-overlay">
+                <h1 class="script-text">Save</h1>
+                <h2 class="serif-text">THE DATE</h2>
+            </div>
+
+            <!-- Wax Seal (positioned on the flower) -->
+            <div class="wax-seal-container" id="waxSeal">
+                <img src="images/templates/sapniemphong.png" alt="Sáp niêm phong" class="wax-seal">
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Players (Manual play only) -->
+    <audio id="music1" loop>
+        <source src="musics/wedding.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="music2" loop>
+        <source src="musics/Em Đồng Ý (I Do).mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Music Control Buttons -->
+    <div class="music-controls-container">
+        <button class="music-btn music-btn-left music-btn-gold" id="musicBtn1" data-audio="music1">
+            <svg class="music-icon music-note-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" />
+            </svg>
+            <span class="music-title">Wedding Music</span>
+        </button>
+        <button class="music-btn music-btn-right music-btn-rose" id="musicBtn2" data-audio="music2">
+            <svg class="music-icon music-note-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M21 3v12.5c0 1.38-1.12 2.5-2.5 2.5S16 16.88 16 15.5s1.12-2.5 2.5-2.5c.57 0 1.08.19 1.5.51V5h-8v10.5c0 1.38-1.12 2.5-2.5 2.5S7 16.88 7 15.5 8.12 13 9.5 13c.57 0 1.08.19 1.5.51V3h10z" />
+            </svg>
+            <span class="music-title">Em Đồng Ý (I Do)</span>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

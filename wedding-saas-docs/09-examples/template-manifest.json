@@ -1,0 +1,11 @@
+{
+  "id": "react-romantic",
+  "version": "1.0.0",
+  "name": "Romantic Wedding",
+  "framework": "react",
+  "runtime": "react-ssr",
+  "runtimeId": "static-runtime-v1",
+  "schemaVersion": "1.0.0",
+  "capabilities": ["hero", "gallery", "countdown", "music"],
+  "assetBase": "/assets/react-romantic/1.0.0/"
+}

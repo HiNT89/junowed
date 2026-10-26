@@ -1,0 +1,9 @@
+{
+  "schemaVersion": "1.0.0",
+  "couple": {"groom": {"name": "Minh"}, "bride": {"name": "Anh"}},
+  "events": [{"id": "wedding", "title": "Lễ cưới", "startsAt": "2027-01-20T11:00:00+07:00", "timezone": "Asia/Ho_Chi_Minh", "venue": "Wedding Palace", "address": "Hà Nội"}],
+  "gallery": [],
+  "music": {"enabled": false},
+  "theme": {"primaryColor": "#B48A78", "fontFamily": "Playfair Display"},
+  "sections": {"hero": true, "gallery": true, "countdown": true, "rsvp": false}
+}

@@ -1,0 +1,595 @@
+/* ==============================================
+   WEDDING CARD - RED & WHITE COLOR THEME
+   Đổi tone màu chủ đạo từ vàng gold sang đỏ trắng
+   ============================================== */
+
+/* CSS Variables for easy color management */
+:root {
+    /* Primary Red Colors - Burgundy/Maroon theme for elegance */
+    --primary-red: #8B1A1A;
+    /* Burgundy - màu chủ đạo */
+    --primary-red-dark: #6B1515;
+    /* Darker burgundy */
+    --primary-red-light: #A52A2A;
+    /* Brown-red lighter */
+    --primary-red-soft: #9C3B3B;
+    /* Soft muted red */
+
+    /* Secondary/Accent Colors */
+    --accent-pink: #D4A5A5;
+    /* Dusty pink - nhẹ nhàng */
+    --accent-rose: #E8C4C4;
+    /* Light rose */
+    --accent-coral: #C97777;
+    /* Muted coral */
+
+    /* Background Colors */
+    --bg-white: #ffffff;
+    --bg-cream: #FDF8F6;
+    /* Warm cream */
+    --bg-light-pink: #FAF5F3;
+    /* Very light warm pink */
+    --bg-gradient-start: #FDF9F7;
+    --bg-gradient-end: #FAF4F2;
+
+    /* Text Colors - Darker for readability */
+    --text-dark: #3D1A1A;
+    /* Dark burgundy brown */
+    --text-medium: #5C2E2E;
+    /* Medium brown-red */
+    --text-light: #7A4A4A;
+    /* Light brown-red */
+    --text-muted: #9B7070;
+    /* Muted for secondary text */
+
+    /* Border/Line Colors */
+    --border-light: #E8D4D4;
+    --border-medium: #D4A5A5;
+}
+
+/* ========== BODY & GLOBAL BACKGROUNDS ========== */
+body {
+    background: linear-gradient(135deg, #3D1A1A 0%, #4D2323 100%) !important;
+}
+
+@media (max-width: 480px) {
+    body {
+        background: white !important;
+    }
+}
+
+/* ========== HERO SECTION ========== */
+/* .hero-overlay {
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.5) 0%,
+            rgba(0, 0, 0, 0.2) 35%,
+            rgba(0, 0, 0, 0) 60%) !important;
+} */
+
+/* ========== SAVE DATE SECTION ========== */
+.save-date-section {
+    background: linear-gradient(135deg, var(--bg-cream) 0%, var(--bg-light-pink) 100%) !important;
+}
+
+.save-date-heading {
+    color: var(--primary-red) !important;
+}
+
+.script-the {
+    color: var(--primary-red-light) !important;
+}
+
+.wedding-date-text {
+    color: var(--primary-red) !important;
+}
+
+/* ========== DATE DISPLAY ========== */
+.date-day,
+.date-month {
+    color: var(--text-dark) !important;
+}
+
+.date-time,
+.date-year {
+    color: var(--primary-red) !important;
+}
+
+.date-number {
+    color: var(--primary-red) !important;
+}
+
+.center-column::before,
+.center-column::after {
+    background: var(--border-medium) !important;
+}
+
+/* ========== CEREMONY DETAILS ========== */
+.ceremony-title {
+    color: var(--text-medium) !important;
+}
+
+.ceremony-time {
+    color: var(--primary-red) !important;
+}
+
+.date-display-full {
+    border-top: 1px solid var(--border-medium) !important;
+    border-bottom: 1px solid var(--border-medium) !important;
+}
+
+.date-label {
+    color: var(--primary-red-soft) !important;
+}
+
+.date-number-medium {
+    color: var(--primary-red-soft) !important;
+}
+
+.date-number-huge {
+    color: var(--primary-red) !important;
+}
+
+.lunar-date {
+    color: var(--text-muted) !important;
+}
+
+.venue-full-address {
+    color: var(--primary-red) !important;
+}
+
+.venue-time {
+    color: var(--primary-red) !important;
+}
+
+/* ========== COUNTDOWN TIMER ========== */
+.countdown-timer-section {
+    background: linear-gradient(135deg, var(--bg-cream) 0%, var(--bg-light-pink) 100%) !important;
+}
+
+.countdown-main-heading {
+    color: var(--primary-red) !important;
+    text-shadow: 0 2px 10px rgba(139, 26, 26, 0.2) !important;
+}
+
+.countdown-number {
+    color: var(--primary-red) !important;
+}
+
+.countdown-colon {
+    color: var(--primary-red-light) !important;
+}
+
+/* ========== STORY SECTION ========== */
+.story-section {
+    background: white !important;
+}
+
+.monogram {
+    color: var(--primary-red) !important;
+}
+
+.story-title {
+    color: var(--primary-red-soft) !important;
+}
+
+.save-the-date-title {
+    color: var(--primary-red-soft) !important;
+}
+
+.script-accent {
+    color: var(--primary-red-light) !important;
+}
+
+.save-date {
+    color: var(--primary-red-soft) !important;
+}
+
+/* ========== INVITATION SECTION ========== */
+.invitation-section {
+    background: linear-gradient(135deg, var(--bg-cream) 0%, var(--bg-light-pink) 100%) !important;
+}
+
+.parent-label {
+    color: var(--primary-red-soft) !important;
+}
+
+/* ========== WEDDING DETAILS SECTION ========== */
+.wedding-details-section {
+    background: white !important;
+}
+
+/* Parents Info - Unified Color Scheme */
+.family-label-top {
+    color: var(--primary-red) !important;
+}
+
+/* Tên ông bà cha mẹ */
+.parents-info-repeat p,
+.bride-parents p,
+.groom-parents p {
+    color: var(--text-dark) !important;
+}
+
+.father-info {
+    color: var(--text-dark) !important;
+}
+
+
+/* Invitation message - dòng mời */
+.invitation-message-repeat {
+    color: var(--primary-red) !important;
+}
+
+.groom-display,
+.bride-display {
+    color: var(--primary-red) !important;
+}
+
+.date-line {
+    background: var(--primary-red) !important;
+}
+
+.ceremony-date {
+    color: var(--primary-red-soft) !important;
+}
+
+.divider-line {
+    background: linear-gradient(to bottom, transparent, var(--primary-red), transparent) !important;
+}
+
+/* ========== DIRECTIONS BUTTON ========== */
+.directions-btn {
+    background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-red-dark) 100%) !important;
+    box-shadow: 0 8px 25px rgba(139, 26, 26, 0.3) !important;
+}
+
+.directions-btn:hover {
+    background: linear-gradient(135deg, var(--primary-red-light) 0%, var(--primary-red) 100%) !important;
+    box-shadow: 0 12px 35px rgba(139, 26, 26, 0.4) !important;
+}
+
+/* ========== COUPLE INFO SECTION ========== */
+.couple-info-section {
+    background: linear-gradient(135deg, var(--bg-cream) 0%, var(--bg-light-pink) 100%) !important;
+}
+
+.script-text {
+    color: var(--primary-red) !important;
+}
+
+/* Save the Date - THE DATE text */
+.serif-text {
+    color: var(--primary-red-dark) !important;
+}
+
+.couple-info-name {
+    color: var(--primary-red-soft) !important;
+}
+
+.couple-birthdate {
+    color: var(--primary-red) !important;
+}
+
+.divider-heart {
+    box-shadow: 0 4px 15px rgba(139, 26, 26, 0.3) !important;
+}
+
+.polaroid-decoration {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%238B1A1A"><circle cx="12" cy="12" r="8" opacity="0.3"/></svg>') !important;
+}
+
+/* ========== DRESSCODE SECTION ========== */
+.dresscode-section {
+    background: linear-gradient(135deg, var(--bg-cream) 0%, var(--bg-light-pink) 100%) !important;
+}
+
+.dresscode-title {
+    color: var(--primary-red-soft) !important;
+}
+
+.dresscode-note {
+    color: var(--primary-red) !important;
+}
+
+.section-subtitle {
+    color: var(--text-dark) !important;
+}
+
+.section-subtitle-dresscode {
+    color: var(--text-dark) !important;
+}
+
+/* ========== TIMELINE SECTION ========== */
+.timeline-dresscode-section {
+    background: linear-gradient(135deg, var(--bg-cream) 0%, var(--bg-light-pink) 100%) !important;
+}
+
+.timeline-zigzag::before {
+    background: linear-gradient(to bottom, var(--primary-red-soft) 0%, var(--border-medium) 50%, var(--primary-red-soft) 100%) !important;
+}
+
+.timeline-time {
+    color: var(--text-dark) !important;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+.timeline-label-small {
+    color: var(--primary-red) !important;
+}
+
+.timeline-dot-center {
+    background: var(--primary-red-soft) !important;
+}
+
+.timeline-dot {
+    background: var(--primary-red-soft) !important;
+    box-shadow: 0 0 0 2px var(--primary-red-soft) !important;
+}
+
+.timeline-line {
+    background: linear-gradient(to bottom, var(--primary-red-soft), var(--border-medium)) !important;
+}
+
+.dresscode-block-tilted {
+    box-shadow: 0 10px 40px rgba(139, 26, 26, 0.12) !important;
+}
+
+.dresscode-block-tilted:hover {
+    box-shadow: 0 15px 50px rgba(139, 26, 26, 0.25) !important;
+}
+
+.dresscode-block:hover {
+    box-shadow: 0 15px 40px rgba(139, 26, 26, 0.2) !important;
+}
+
+/* ========== ALBUM SECTION ========== */
+.album-section {
+    background: linear-gradient(135deg, var(--bg-cream) 0%, var(--bg-light-pink) 100%) !important;
+}
+
+.album-title {
+    color: var(--primary-red-soft) !important;
+}
+
+.script-of {
+    color: var(--primary-red-light) !important;
+}
+
+.album-love-text {
+    color: var(--primary-red-soft) !important;
+    -webkit-text-stroke: 2px var(--primary-red) !important;
+}
+
+.carousel-nav {
+    color: var(--primary-red-soft) !important;
+}
+
+.carousel-nav:hover {
+    background: var(--primary-red-soft) !important;
+    color: white !important;
+}
+
+.carousel-thumb.active {
+    border-color: var(--primary-red-soft) !important;
+    box-shadow: 0 8px 20px rgba(139, 26, 26, 0.5) !important;
+}
+
+.carousel-thumb:hover {
+    box-shadow: 0 8px 20px rgba(139, 26, 26, 0.3) !important;
+}
+
+.carousel-thumbnails {
+    scrollbar-color: var(--primary-red) var(--bg-light-pink) !important;
+}
+
+.carousel-thumbnails::-webkit-scrollbar-track {
+    background: var(--bg-light-pink) !important;
+}
+
+.carousel-thumbnails::-webkit-scrollbar-thumb {
+    background: var(--primary-red) !important;
+}
+
+.carousel-thumbnails::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-red-soft) !important;
+}
+
+.album-thumbnails img:hover {
+    box-shadow: 0 8px 25px rgba(139, 26, 26, 0.3) !important;
+}
+
+/* ========== RSVP SECTION ========== */
+.rsvp-section {
+    background: linear-gradient(135deg, var(--bg-cream) 0%, var(--bg-light-pink) 100%) !important;
+}
+
+.form-input,
+.form-textarea,
+.form-select {
+    border: 2px solid var(--border-light) !important;
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+    border-color: var(--primary-red) !important;
+    box-shadow: 0 4px 15px rgba(139, 26, 26, 0.2) !important;
+}
+
+.form-select {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%238B1A1A"><path d="M7 10l5 5 5-5z"/></svg>') !important;
+}
+
+.form-submit-btn {
+    background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-red-dark) 100%) !important;
+    box-shadow: 0 8px 25px rgba(139, 26, 26, 0.3) !important;
+}
+
+.form-submit-btn:hover {
+    box-shadow: 0 12px 35px rgba(139, 26, 26, 0.4) !important;
+}
+
+.form-gift-btn {
+    color: var(--primary-red-soft) !important;
+    border: 2px solid var(--primary-red) !important;
+}
+
+.form-gift-btn:hover {
+    background: var(--bg-cream) !important;
+}
+
+/* ========== MUSIC PLAYER ========== */
+.music-player {
+    border: 1px solid rgba(139, 26, 26, 0.2) !important;
+}
+
+.music-player:hover {
+    box-shadow: 0 12px 40px rgba(139, 26, 26, 0.3) !important;
+}
+
+.music-toggle {
+    background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-red-dark) 100%) !important;
+    box-shadow: 0 4px 12px rgba(139, 26, 26, 0.4) !important;
+}
+
+.music-toggle:hover {
+    box-shadow: 0 6px 16px rgba(139, 26, 26, 0.5) !important;
+}
+
+.music-title {
+    color: var(--primary-red-soft) !important;
+}
+
+.music-wave span {
+    background: linear-gradient(to top, var(--primary-red), var(--primary-red-light)) !important;
+}
+
+/* Music Button Gold -> Red */
+.music-btn-gold {
+    background: linear-gradient(135deg, rgba(255, 245, 245, 0.95) 0%, rgba(255, 230, 230, 0.95) 100%) !important;
+    border: 2px solid var(--primary-red) !important;
+    box-shadow: 0 4px 20px rgba(139, 26, 26, 0.3) !important;
+}
+
+.music-btn-gold .music-icon {
+    color: var(--primary-red-soft) !important;
+}
+
+.music-btn-gold:hover {
+    box-shadow: 0 6px 30px rgba(139, 26, 26, 0.5) !important;
+}
+
+.music-btn-gold.playing {
+    background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-red-dark) 100%) !important;
+    animation: pulse-glow-red 2s infinite !important;
+}
+
+.music-btn-gold.playing .music-icon {
+    color: white !important;
+}
+
+/* Music Button Rose stays similar but with red accent */
+.music-btn-rose {
+    background: linear-gradient(135deg, rgba(255, 240, 245, 0.95) 0%, rgba(255, 220, 225, 0.95) 100%) !important;
+    border: 2px solid var(--accent-pink) !important;
+    box-shadow: 0 4px 20px rgba(212, 165, 165, 0.3) !important;
+}
+
+.music-btn-rose .music-icon {
+    color: var(--primary-red-light) !important;
+}
+
+.music-btn-rose:hover {
+    box-shadow: 0 6px 30px rgba(212, 165, 165, 0.5) !important;
+}
+
+.music-btn-rose.playing {
+    background: linear-gradient(135deg, var(--accent-pink) 0%, var(--primary-red-light) 100%) !important;
+    animation: pulse-glow-red-light 2s infinite !important;
+}
+
+.music-btn-rose.playing .music-icon {
+    color: white !important;
+}
+
+@keyframes pulse-glow-red {
+
+    0%,
+    100% {
+        box-shadow: 0 4px 20px rgba(139, 26, 26, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 4px 35px rgba(139, 26, 26, 0.8);
+    }
+}
+
+@keyframes pulse-glow-red-light {
+
+    0%,
+    100% {
+        box-shadow: 0 4px 20px rgba(212, 165, 165, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 4px 35px rgba(212, 165, 165, 0.8);
+    }
+}
+
+/* ========== DIVIDERS & DECORATIONS ========== */
+.divider {
+    background: linear-gradient(to right, var(--primary-red), transparent) !important;
+}
+
+.floral-decoration {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="15" fill="%23e8a4a4" opacity="0.3"/><circle cx="50" cy="30" r="12" fill="%23d88888" opacity="0.4"/><circle cx="70" cy="15" r="10" fill="%238B1A1A" opacity="0.3"/></svg>') !important;
+}
+
+.floral-top-decoration {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="30" cy="30" r="20" fill="%23e8a4a4" opacity="0.4"/><circle cx="60" cy="50" r="15" fill="%23d88888" opacity="0.5"/><circle cx="80" cy="25" r="12" fill="%238B1A1A" opacity="0.4"/></svg>') !important;
+}
+
+/* ========== MESSAGE SECTION ========== */
+.script-signature {
+    color: var(--accent-pink) !important;
+}
+
+/* ========== INDEX PAGE SPECIFIC (style.css overrides) ========== */
+.wax-seal:hover {
+    opacity: 0.8 !important;
+}
+
+/* Override pulse-glow for index page */
+@keyframes pulse-glow {
+
+    0%,
+    100% {
+        filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.5));
+    }
+
+    50% {
+        filter: drop-shadow(0 12px 30px rgba(139, 26, 26, 0.9)) brightness(1.3);
+    }
+}
+
+/* ========== GENERAL LINK COLORS ========== */
+a {
+    color: var(--primary-red);
+}
+
+a:hover {
+    color: var(--primary-red-dark);
+}
+
+/* ========== SVG ICONS ========== */
+svg path[fill="#c9a86a"],
+svg path[fill="#b8956a"],
+svg circle[fill="#c9a86a"],
+svg circle[fill="#b8956a"] {
+    fill: var(--primary-red) !important;
+}
+
+/* ========== HEART ICON COLOR ========== */
+.divider-heart svg path {
+    fill: var(--primary-red) !important;
+}
